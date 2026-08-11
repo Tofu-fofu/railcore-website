@@ -1,0 +1,370 @@
+/* ==================================================
+   HERO
+   ================================================== */
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 720px;
+    height: 70vh;
+    margin-top: 90px;
+
+    position: relative;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(4, 25, 52, 0.96) 0%,
+            rgba(4, 25, 52, 0.88) 35%,
+            rgba(4, 25, 52, 0.45) 65%,
+            rgba(4, 25, 52, 0.10) 100%
+        ),
+        url("/img/img/bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ==================================================
+   CONTAINER
+   ================================================== */
+
+.hero-container {
+    width: 1280px;
+    max-width: calc(100% - 100px);
+    min-height: 720px;
+
+    margin-left: 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ==================================================
+   CONTENT
+   ================================================== */
+
+.hero-content {
+    width: 80%;
+}
+
+.hero h1 {
+    margin: 0 0 28px;
+
+    color: #F8FFFF;
+
+    font-family: "Inter", sans-serif;
+    font-size: 90px;
+    line-height: 100px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-description {
+    max-width: 60%;
+
+    margin: 0 0 40px;
+
+    color: rgba(237, 243, 243, 0.85);
+
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+/* ==================================================
+   BUTTONS
+   ================================================== */
+
+.hero-actions {
+    font-family: 'Arial';
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    letter-spacing: 0.5px;
+
+}
+
+.hero-button {
+    height: 60px;
+    padding: 0 35px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease;
+}
+
+
+/* Смотреть каталог */
+
+.hero-button-secondary {
+    color: #F8FFFF;
+    background-color: transparent;
+
+    border: 1px solid #F8FFFF;
+}
+
+.hero-button-secondary:hover {
+    color: #041934;
+    background-color: #F8FFFF;
+}
+
+
+/* Запросить КП */
+
+.hero-button-primary {
+    color: #FFFFFF;
+    background-color: var(--btn-color);
+
+    border: 1px solid var(--btn-color);
+}
+
+.hero-button-primary:hover {
+    background-color: var(--bg-color-dark);
+    border-color: var(--btn-color);
+}
+
+
+/* ==================================================
+   HERO ADVANTAGES
+   ================================================== */
+
+.hero-advantages {
+    width: 75%;
+    height: 230px;
+    box-shadow: 0 10px 15px rgb(110, 110, 113);
+    position: absolute;
+    left: 50%;
+    bottom: -90px;
+    transform: translateX(-50%);
+
+    display: grid;
+    grid-template-columns:
+        1fr 1px
+        1fr 1px
+        1fr 1px
+        1fr;
+
+    align-items: center;
+
+    padding: 0 50px;
+
+    background-color: #082449;
+
+    border-radius: 8px;
+
+    z-index: 10;
+}
+
+
+/* ==================================================
+   ADVANTAGE ITEM
+   ================================================== */
+
+.hero-advantage {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    min-width: 0;
+
+    padding: 0 45px;
+
+    transition: 0.2s;
+}
+.hero-advantage:hover i{
+    transform: scale();
+    color: rgb(234, 210, 124);
+}
+
+/* ==================================================
+   ICON
+   ================================================== */
+
+.hero-advantage-icon {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    font-size: 60px;
+}
+
+
+/* ==================================================
+   TEXT
+   ================================================== */
+
+.hero-advantage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-advantage-text {
+    margin-top: 10px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    width: 70%;
+}
+
+.hero-advantage h3 {
+    margin: 0;
+
+    color: var(--btn-color);
+
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+
+
+/* ==================================================
+   VERTICAL DIVIDERS
+   ================================================== */
+
+.hero-advantage-divider {
+    width: 1px;
+    height: 90px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+
+/* ==================================================
+   ADVANTAGE HOVER ANIMATIONS
+   ================================================== */
+
+.hero-advantage-icon {
+    color: #FFFFFF;
+
+    font-size: 70px;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+.hero-advantage-engineering:hover .hero-advantage-icon {
+    color: var(--btn-color);
+
+    animation: gear-rotate 1.5s linear infinite;
+}
+
+@keyframes gear-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.hero-advantage-supply:hover .hero-advantage-icon {
+    color: var(--btn-color);
+
+    animation: truck-drive 1s ease-in-out infinite;
+}
+
+@keyframes truck-drive {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    25% {
+        transform: translateX(5px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateX(10px) rotate(0deg);
+    }
+
+    75% {
+        transform: translateX(5px) rotate(1deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+.hero-advantage-partnership:hover .hero-advantage-icon {
+    color: var(--btn-color);
+
+    animation: globe-rotate 2s linear infinite;
+}
+
+@keyframes globe-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+.hero-advantage {
+    transition: transform 0.3s ease;
+}
+
+.hero-advantage:hover {
+    transform: translateY(-3px);
+}
+
+.hero-advantage h3 {
+    transition: color 0.3s ease;
+}
+
+.hero-advantage:hover h3 {
+    color: var(--btn-color);
+}
+/* ==================================================
+   01 — PREMIUM QUALITY
+   ================================================== */
+
+.hero-advantage:nth-of-type(1):hover .hero-advantage-icon {
+    color: var(--btn-color);
+
+    transform: scale(1.12);
+
+    filter:
+        drop-shadow(0 0 8px rgba(238, 209, 47, 0.65))
+        drop-shadow(0 0 18px rgba(246, 151, 44, 0.35));
+}
+
+.hero-advantage-quality:hover .hero-advantage-icon {
+    color: var(--btn-color);
+
+    transform: scale(1.12);
+
+    filter:
+        drop-shadow(0 0 8px rgba(255, 138, 0, 0.7))
+        drop-shadow(0 0 20px rgba(255, 138, 0, 0.4));
+}
+

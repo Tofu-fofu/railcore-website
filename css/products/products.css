@@ -1,0 +1,244 @@
+/* ==================================================
+   PRODUCTS
+   ================================================== */
+
+.products {
+    width: 100%;
+
+    padding: 190px 0 96px;
+
+    background-color: #F5F7FA;
+}
+
+
+/* ==================================================
+   CONTAINER
+   ================================================== */
+
+.products-container {
+    width: 70%;
+    max-width: calc(100% - 100px);
+
+    margin: 0 auto;
+}
+
+
+/* ==================================================
+   HEADER
+   ================================================== */
+
+.products-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.products-heading {
+    max-width: 700px;
+}
+
+
+.section-eyebrow {
+    margin: 0 0 14px;
+
+    color: var(--btn-color);
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+}
+
+
+.products h2 {
+    margin: 0 0 20px;
+
+    color: #1E1E1E;
+
+    font-family: "Inter", sans-serif;
+    font-size: 42px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+
+.section-description {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: #5B6875;
+
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+/* ==================================================
+   ALL PRODUCTS LINK
+   ================================================== */
+
+.products-all-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 5px;
+
+    color: #041934;
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+.products-all-link i {
+    font-size: 13px;
+
+    transition: transform 0.2s ease;
+}
+
+.products-all-link:hover {
+    color: var(--btn-color);
+}
+
+.products-all-link:hover i {
+    transform: translateX(5px);
+}
+
+
+/* ==================================================
+   PRODUCT GRID
+   ================================================== */
+
+.products-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+}
+
+
+/* ==================================================
+   PRODUCT CARD
+   ================================================== */
+
+.product-card {
+    overflow: hidden;
+
+    background-color: #cccce6;
+    box-shadow: 0 10px 15px rgb(134, 131, 131);
+    border-radius: 8px;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(4, 25, 52, 0.10);
+}
+
+
+/* ==================================================
+   IMAGE
+   ================================================== */
+
+.product-card-image {
+    width: 100%;
+    height: 280px;
+
+    overflow: hidden;
+
+    background-color: #E9EEF3;
+}
+
+.product-card-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-card-image img {
+    transform: scale(1.04);
+}
+
+
+/* ==================================================
+   CARD CONTENT
+   ================================================== */
+
+.product-card-content {
+    padding: 28px;
+}
+
+
+.product-card h3 {
+    margin: 0 0 12px;
+
+    color: #1E1E1E;
+
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+}
+
+
+.product-card p {
+    min-height: 56px;
+
+    margin: 0 0 24px;
+
+    color: #5B6875;
+
+    font-family: "Google Sans Flex", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+/* ==================================================
+   CARD LINK
+   ================================================== */
+
+.product-card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--btn-color);
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.product-card-link i {
+    font-size: 13px;
+
+    transition: transform 0.2s ease;
+}
+
+.product-card-link:hover i {
+    transform: translateX(5px);
+}
